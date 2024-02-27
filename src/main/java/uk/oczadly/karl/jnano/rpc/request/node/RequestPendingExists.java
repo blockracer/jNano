@@ -26,7 +26,7 @@ public class RequestPendingExists extends RpcRequest<ResponseExists> {
      * @param blockHash the block's hash
      */
     public RequestPendingExists(String blockHash) {
-        super("pending_exists", ResponseExists.class);
+        super("receivable_exists", ResponseExists.class);
         this.blockHash = blockHash;
     }
     
