@@ -62,7 +62,7 @@ public class RequestPending extends RpcRequest<ResponsePending> {
      */
     public RequestPending(String account, int count, BigInteger threshold, Boolean includeActive, Boolean sorting,
                           Boolean includeOnlyConfirmed) {
-        super("pending", ResponsePending.class);
+        super("receivable", ResponsePending.class);
         this.account = account;
         this.count = count;
         this.threshold = threshold;
